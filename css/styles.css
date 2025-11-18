@@ -1,0 +1,294 @@
+@font-face {
+	font-family: 'Beaufort for LOL';
+	src: url(/fonts/BeaufortforLOL-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #161f32;
+	font-family: 'Beaufort for LOL', sans-serif;
+}
+
+/* ========
+NAVBAR
+======== */
+
+.navbar {
+	min-height: 80px;
+	background-color: #111111;
+}
+
+.navbar .container-fluid {
+	padding: 0px 40px;
+}
+
+.navbar svg {
+	fill: white;
+}
+
+.navbar svg:hover {
+	fill: #EB0029
+}
+
+.navbar-nav {
+	gap: 30px;
+}
+
+.navbar a {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar .navbar-collapse a:hover {
+	color: #cbb078;
+	background-color: #cbaf7817;
+	border-radius: 10px;
+}
+
+/* ========
+FULLBANNER
+======== */
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+.content {
+	width: 100%;
+	padding: 50px 100px;
+}
+
+.fullbanner {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.fullbanner video {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.logo h1 {
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.logo .botao_jogar {
+	background-color: #cbb078;
+	padding: 20px;
+	width: 200px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	color: black;
+}
+
+/* ========
+NOTICIAS
+======== */
+.noticias {
+	background-color: #fff;
+	width: 100%;
+	background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4c59eeaf4adc540fd42745bd5c71563fba8f6288-3840x1328.png?auto=format&fit=fill&q=80&w=1920);
+}
+
+.noticias h3 {
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+
+.noticias .row .card_news {
+	display: flex;
+	justify-content: space-around;
+}
+
+.noticias .card {
+	border: none;
+	background-color: transparent;
+}
+
+.noticias .card-body {
+	margin-top: 15px;
+	padding: 0;
+}
+
+.noticias .card img {
+	width: 100%;
+}
+
+.noticias .card .tipo_data p {
+	font-size: 14px;
+}
+
+.noticias .card .tipo_data p span {
+	color: #cbb078;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.noticias .card-text span {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* ========
+CAMPEÕES
+======== */
+
+.detalhes {
+	background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2037fa505fd6b830ad9212f57865bbf49014e2e3-656x656.png?auto=format&fit=fill&q=80&w=656);
+	background-size: cover;
+	background-position: center;
+}
+
+.detalhes .content {
+	margin-top: 50px;
+	align-items: center;
+}
+
+.detalhes .texto h3 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.detalhes .texto p {
+	font-size: 18px;
+}
+
+.botao_conhecer_campeao {
+	background-color: #cbb078;
+	padding: 20px;
+	width: 200px;
+	border: 1px solid #000;
+}
+
+.botao_conhecer_campeao a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	color: black;
+	text-align: center;
+}
+
+/* ========
+DEPOIMENTOS
+======== */
+
+.depoimentos h3 {
+	margin: 30px 0;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.depoimentos .content .card {
+	border: none;
+	margin-top: 20px;
+	max-width: 400px;
+	background-color: transparent;
+}
+
+.depoimentos .content .card .card-body {
+	background-color: #cbaf781f;
+	border-radius: 25px;
+	padding: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 200px;
+}
+
+.depoimentos .content .card img {
+	width: 50%;
+	margin: auto;
+	border: 2px solid #cbb078;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+/* ========
+FAQ
+======== */
+
+.faq .content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.faq h3 {
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+/* ========
+FOOTER
+======== */
+
+footer {
+	background-color: #111111;
+}
+
+/* ========
+MEDIA QUERIES
+======== */
+
+@media (max-width: 768px) {
+
+	.content {
+		padding: 0;
+	}
+
+	.fullbanner video {
+		width: 250%;
+		min-height: 700px;
+	}
+
+	.navbar {
+		z-index: 999;
+	}
+}
